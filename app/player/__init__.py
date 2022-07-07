@@ -11,17 +11,17 @@ class NpcDefault(ABC):
         self._properts: list = []
 
     @abstractmethod
-    def _buy(self, board, position:int) -> bool:
+    def _buy(self, board, position: int) -> bool:
         raise NotImplementedError()
 
-    def _pay_rent(self, board, position:int, state: bool=False) -> bool:
+    def _pay_rent(self, board, position: int, state: bool = False) -> bool:
         rent = board.rent[position]
         if self._credit >= rent:
             self._credit -= rent
             state = True
         return state
 
-    def play(self, board, index:int, state: bool=True) -> bool:
+    def play(self, board, index: int, state: bool = True) -> bool:
         self._position += cast_square()
         len_board = len(board.sale_value) - 1
         if self._position > len_board:

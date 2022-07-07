@@ -57,6 +57,14 @@ Board Game, is a game simulation
   this command generates a folder with html reports,
   in app/htmlcov
 
+### Lint
+
+  maybe you want to run lint guild style flake8,
+  set verbosity to .flake8, guild style 100% complete,
+  no errors pep :)
+
+    make lint
+
 ### Fun
 
  you can read more about this challenge  folder

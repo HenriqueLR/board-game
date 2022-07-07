@@ -1,5 +1,6 @@
 from app.board.default import BoardDefault
 
+
 class TestBoardProperts:
 
     def setup_class(self):

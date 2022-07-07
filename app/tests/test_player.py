@@ -1,5 +1,6 @@
 from app.player.npc import NpcImpulsive, NpcDemanding, NpcCautious, NpcRandom
 
+
 class TestBoardProperts:
 
     def setup_class(self):
@@ -27,13 +28,7 @@ class TestBoardProperts:
         assert self.random._position == 0
 
     def test_init_disabled_players(self):
-        assert self.impulsive.disabled == False
-        assert self.demanding.disabled == False
-        assert self.cautious.disabled == False
-        assert self.random.disabled == False
-
-    def test_init_disabled_players(self):
-        assert self.impulsive._properts == []
-        assert self.demanding._properts == []
-        assert self.cautious._properts == []
-        assert self.random._properts == []
+        assert self.impulsive.disabled is False
+        assert self.demanding.disabled is False
+        assert self.cautious.disabled is False
+        assert self.random.disabled is False
