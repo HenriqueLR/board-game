@@ -11,4 +11,4 @@ install:
 	pip install -r requirements.txt ;\
 
 test:
-	cd app && python -m pytest ;\
+	cd app && coverage run -m pytest && coverage report -m && coverage html && coverage erase ;\
